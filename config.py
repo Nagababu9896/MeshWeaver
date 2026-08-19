@@ -1,0 +1,19 @@
+# MeshWeaver
+import os
+
+HOSTC = os.getenv("MESH_HOST", "9000")
+PORT = int(os.getenv("MESH_PORT", "9000"))
+
+BOOTSTRAP_HOST = os.getenv("BOOTSTRAP_HOST", "")
+BOOTSTRAP_PORT = int(os.getenv("BOOTSTRAP_PORT", "9000"))
+
+GOSSIP_INTERVAL = 5
+HEARTBEAT_INTERVAL = 5
+NODE_TIMEOUT = 15
+
+K_BUCKET_SIZE = 20
+MAX_PEERS = 50
+
+TASK_TIMEOUT = 20
+
+BUFFER_SIZE = 65535
