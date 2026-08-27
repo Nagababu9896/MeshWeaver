@@ -115,16 +115,13 @@ def decode_message(data):
 
     return message
 
-def create_ping_message(node_id):
+def create_ping(node_id: str) -> dict:
     """
-    Create a PING message.
+    Create a valid PING message.
     """
 
-    return create_message(
-        PING,
-        node_id,
-    )    
-
+    return create_message(PING, node_id)
+         
 def create_pong_message(node_id):
     """
     Create a PONG message.
