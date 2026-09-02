@@ -29,7 +29,7 @@ for peer in dht.get_peers():
         peer.port
     )
 
-closest = dht.find_closest(
+closest = dht.find_closest_peers(
     "b" * 64,
     count=2
 )
